@@ -19,23 +19,21 @@ def ft_filter(function_to_apply, list_of_inputs):
             print("Wrong attribute")
     return(new)
 
-# list of alphabets
-alphabets = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
 
-# function that filters vowels
+# get some vowels
 def filterVowels(alphabet):
     vowels = ['a', 'e', 'i', 'o', 'u']
-
     if(alphabet in vowels):
         return True
     else:
         return False
 
-filteredVowels = ft_filter(filterVowels, alphabets)
 
+alphabets = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
+filteredVowels = ft_filter(filterVowels, alphabets)
 print('The filtered vowels are:i')
 print("mine :", filteredVowels)
 test = filter(filterVowels, alphabets)
 print("true :", end='')
 for i in test:
-    print("{} ".format(i),end='')
+    print("{} ".format(i), end='')
